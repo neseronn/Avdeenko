@@ -5,14 +5,41 @@ body {
     line-height: 26px;
 }
 
+.wrap {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
 }
-
+/* Заголовки */
 h1 {
     font-size: 80px;
     font-weight: 600;
     color: #192b59;
+    max-width: 540px;
+    line-height: 1.1;
+    letter-spacing: -2.5px;
+    margin-bottom: 65px;
+}
+.title-h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    margin-bottom: 76px;
+}
+.title-h2 span {
+    display: block;
+    /* line-height: 1.2; */
+    font-size: 16px;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
 }
 
 /* page-header */
@@ -25,8 +52,15 @@ h1 {
     padding: 0px;
     margin: 0px;
     list-style-type: none;
+    display: flex;
 }
-
+.nav>li {
+    padding: 0 18.9px;
+    letter-spacing: 2.6px;
+}
+.nav-item {
+    color: #6e7ea9;
+}
 /* a:hover {
     color: gold;
 } */
@@ -211,32 +245,37 @@ h1 {
 
 /* page-stat */
 
-.page-stat span {
-    font-size: 16px;
-    font-weight: 800;
-    color: #1085e4;
-    display: block;
-    text-transform: uppercase;
+.page-stat {
+    background-color: #edf6ff;
+    padding: 115px 0 95px 0;
 }
-
-.page-stat h2 {
-    font-size: 50px;
-    font-weight: 600;
-    color: #192b59;
+.page-stat .title-h2 {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-bottom: 76px;
+}   
+.list-stat {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
 }
-
-.page-stat li {
+.list-stat>li {
     font-size: 12px;
     font-weight: 700;
     color: #1085e4;
     text-transform: uppercase;
-    list-style-type: none;
+    letter-spacing: 2.5px;
+    text-align: center;
 }
-
-.page-stat ul span {
-    font-size: 50px;
+.page-stat li span {
+    font-size: 60px;
     font-weight: 700;
     color: #bacbdc;
+    letter-spacing: 0px;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
 }
 
 /* page-app */
@@ -289,16 +328,115 @@ h1 {
 }
 
 /* page-screen */
+.page-screen, .page-plan {
+    text-align: center;
+}
 
 .page-screen span {
     font-size: 18px;
     font-weight: 800;
     color: #1085e4;
     display: block;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    margin-bottom: 27px;
 }
-
 .page-screen h2 {
     font-size: 40px;
     font-weight: 600;
     color: #192b59;
+    letter-spacing: -1.2px;
+}
+.screen {
+    margin-top: 49px;;
+    margin-bottom: -10px;
+}
+
+/* page-plan */
+/* 32% page-plan flex-basis */
+
+.title-h2 span{
+    font-size: 18px;
+    letter-spacing: 3.5px;  
+    margin-bottom: 21px;
+}
+.title-h2 {
+    font-size: 39px;
+    letter-spacing: -0.7px;
+}
+.box-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.plan1 h3:first-child {
+    margin-bottom: 35px;
+}
+.box-price-item {
+    background-color: #f5faff;
+    flex-basis: 32%;
+    padding: 90px 0 96px 0;
+    position: relative;
+}
+.box-price-item h3 {
+    color: #000958;
+    font-size: 70px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.box-price-item h3 span {
+    font-size: 20px;
+}
+.box-price-item p {
+    font-size: 14px;
+    color: #0084ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.box-price-item h3 span:first-child {
+    color: #000958;
+}
+.box-price-item.active h3 span:first-child {
+    color: #fff;
+}
+.box-price-item.active h3 {
+    color: #fff;
+}
+.box-price-item h3 span:last-child {
+    color: #7b8ab2;
+}
+.box-price-item.active {
+    background-color: #152b59;
+    color: #fff;
+}
+.box-price-item ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 39px;
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+.box-price-item ul>li {
+    margin-bottom: 14px;
+}
+.box-price-item::after {
+    content: "";
+    /* width: 350px; */
+    width: 58px;
+    height: 100%;
+    /* background-image: url(../img/box-price-pic.png); */
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.box-price-item.active::after {
+    display: none;
+}
+
+/* Background */
+
+.page-screen {
+    padding: 80px 0 0 0;
 }
