@@ -256,70 +256,87 @@ h1 {
 
 .page-subscribe {
     margin-top: 116px;
-    background: linear-gradient(to right, rgba(10,32,144,1) 0%, rgba(35,119,205,1) 100%);
-    /* padding-top: 71px;
-    padding-bottom: 119px; */
-    padding: 50px 0 124px 0;
+    padding: 30px 0;
+    background: rgba(10,32,144,1);
+    background: -moz-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
+    background: -webkit-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -o-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -ms-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: linear-gradient(to right, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
 }
 .box-subscr {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
 }
-.page-subscribe span {
-    font-size: 14px;
+.box-subscr-child {
+    flex-basis: 50%;
+}
+.page-subscribe .title-h2 span {
+    font-size: 13px;
     color: #00bffe;
     display: block;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-top: 64px;
-    margin-bottom: 30px;
+    letter-spacing: 3.6px;
+    margin-bottom: 18px;
 }
-
 .page-subscribe h2 {
     font-size: 50px;
     font-weight: 600;
     color: #ffffff;
-    margin-bottom: 47px;
+    margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 30px;
     letter-spacing: -1.5px;
 }
-
 .page-subscribe p {
     font-size: 18px;
     font-weight: 400;
     color: #dfe8ff;
     max-width: 405px;
 }
-
-.page-subscribe input {
-    font-size: 14px;
-    font-weight: 400;
-    color: #b1c3ee;
-    background-color: #10359f;
-    text-align: left;
-    margin-top: 20px;
-    padding: 24px;
-    width: 491px;
-    border-radius: 100px;
+.box-subscr-user input {
+    border: 2px solid #3f5cb1;
+    border-radius: 35px;
+    background-color: transparent;
+    padding: 23px 210px 23px 38px;
+    display: block; /*ширина = ширине блока*/
+    width: 100%;
+    box-sizing: border-box; /*делает ширину ровно по блоку чтоб не выходил за границы*/
+    box-shadow: 10px 20px 30px rgba(146, 226, 250, 0.5); /*тень: по оси х; по у; толщина;*/
 }
-
-.page-subscribe input::placeholder {
-    color: #b1c3ee;
+.box-subscr-user {
+    position: relative;
 }
-.subscribe-img {
-    display: block;
-    background-image: url(../img/Robot.png);
-    background-repeat: no-repeat;
-    width: 354px;
-    height: 417px;
+.box-subscr-user .btn-primary {
     position: absolute;
-    /* top: 192px; */
-    right: 205px;
+    letter-spacing: 4px;
+    top: 9px;
+    right: 11px;
+    padding: 17px 45px;
 }
-/* .subscribe-img {
+.box-subscr-user input:focus {
+    outline: none;
+    color: #b1c3ee;
+}
 
-} */
+.box-subscr-user input::-webkit-input-placeholder {
+    color: #b1c3ee;
+}
+.box-subscr-user input::-moz-placeholder {
+    color: #b1c3ee;
+}
+.box-subscr-user input:-moz-placeholder {
+    color: #b1c3ee;
+}
+.box-subscr-user input:-ms-input-placeholder {
+    color: #b1c3ee;
+}
+
+
 
 /* page-software */
 
