@@ -33,7 +33,6 @@ h1 {
 }
 .title-h2 span {
     display: block;
-    /* line-height: 1.2; */
     font-size: 16px;
     font-weight: 800;
     color: #1085e4;
@@ -171,7 +170,8 @@ h1 {
     background-image: url(../img/page-company-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 100px;
+    /* padding: 100px 100px; */
+    padding: 100px 0 100px 0;
 }
 .list-company {
     list-style-type: none;
@@ -205,48 +205,132 @@ h1 {
 
 
 /* page-grid */
+
+.page-grid {
+    margin-top: 132px;
+}
+.grid {
+    display: grid;
+    grid-template-areas: "a b c" "d b c" "d e f" "g e f" "g h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr; /*ширина колонки*/
+}
+.grid-title {
+    margin-top: -31px;
+    grid-area: a;
+}
+.grid-item {
+    padding: 26px 30px 61px 30px;
+    text-align: center;
+    box-shadow: 0 0 5px #9aa3ba;
+}
+.grid-item-1 {
+    grid-area: b;
+}
+.grid-item-2 {
+    grid-area: c;
+}
+.grid-item-3 {
+    padding-top: 43px;
+    margin-bottom: 44px;
+    grid-area: d;
+}
+.grid-item-4 {
+    padding: 31px 27px 42px 38px;
+    margin-bottom: 11px;
+    grid-area: e;
+}
+.grid-item-5 {
+    padding: 31px 28px 35px 36px;
+    margin-bottom: 11px;
+    grid-area: f;
+}
+.grid-item-6 {
+    margin-top: -51px;
+    margin-bottom: 44px;
+    grid-area: g;
+}
+.grid-text {
+    grid-area: h;
+}
 .grid p {
-    color: #7581a1;
     font-weight: 400;
 }
-
 .grid h2 {
     font-size: 40px;
     color: #192b59;
     font-weight: 700;
+    letter-spacing: -1.2px;
+    line-height: 49px;
 }
-
 .grid h2 span {
+    font-weight: 800;
     font-size: 14px;
     color: #1085e4;
     display: block;
     text-transform: uppercase;
+    letter-spacing: 2.7px;
+    padding-left: 3px;
 }
-
 .grid-item h3 {
     font-size: 20px;
     font-weight: 600;
     color: #192b59;
+    letter-spacing: -0.7px;
 }
-
 .grid-item a {
     font-size: 14px;
     font-weight: 600;
     color: #1085e4;
 }
-
+.grid-icon {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: 90px; /*высота*/
+}
+.grid-icon-1 {
+    background-image: url("../img/bg3_icon1.png");
+    /* width: 99px; */
+    /* height: 92px; */
+    height: 104px;
+    background-position: center;
+}
+.grid-icon-2 {
+    background-image: url("../img/bg3_icon2.png");
+    width: 112px;
+    height: 104px;
+}
+.grid-icon-3 {
+    background-image: url("../img/bg3_icon3.png");
+    width: 83px;
+    height: 85px;
+}
+.grid-icon-4 {
+    background-image: url("../img/bg3_icon4.png");
+    width: 109px;
+    height: 110px;
+}
+.grid-icon-5 {
+    background-image: url("../img/bg3_icon5.png");
+    width: 103px;
+    /* height: 90px; */
+    height: 110px;
+}
+.grid-icon-6 {
+    background-image: url("../img/bg3_icon6.png");
+    width: 138px;
+    height: 119px;
+}
 .grid-item p {
     font-size: 16px;
-    font-weight: 600;
     color: #7581a1;
+    letter-spacing: 0px;
 }
-
 .quote span {
     font-size: 16px;
     font-weight: 700;
     color: #192b59;
 }
-
 .quote p {
     color: #1085e4;
     font-size: 14px;
