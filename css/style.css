@@ -13,6 +13,13 @@ body {
 a {
     text-decoration: none;
 }
+
+button {
+    background: transparent;
+}
+ul {
+    padding: 0;
+}
 /* Заголовки */
 h1 {
     font-size: 80px;
@@ -39,6 +46,24 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 15px;
+}
+
+.title-h2-40 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    letter-spacing: -1.1px;
+}
+
+.title-h2-40 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1085e4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
 }
 
 /* page-header */
@@ -819,6 +844,184 @@ h1 {
 }
 .box-price-item.active::after {
     display: none;
+}
+
+/* page-team */
+
+.page-team {
+    text-align: center;
+    background-image: url(../img/team-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 82.5px 0 20px 0;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    /* z-index: -4; */
+}
+
+.page-team .title-h2-40 span {
+    color: #85c8ff;
+    margin-bottom: 18px;
+}
+
+.page-team .title-h2-40 {
+    color: #fff;
+}
+
+.our-team {
+    margin-top: 20px;
+}
+
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 31%;
+    box-shadow: 0 15px 21px -5px #ececec;
+    position: relative;
+    padding: 193px 3px 40px 3px;
+    z-index: 0;
+}
+
+.box-team-item .team-position {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1a88e1;
+    font-weight: 800;
+    letter-spacing: 2.95px;
+}
+
+.box-team-item .team-name {
+    font-size: 26px;
+    color: #192b59;
+    font-weight: 600;
+    margin-top: -8px;
+    letter-spacing: -0.8px;
+}
+
+.box-team .avatar {
+    position: absolute;
+    top: -88px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 288px;
+}
+.btn-team {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    transition: 0.3s;
+}
+.box-team-item .button-more span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: -1px -1.5px;
+    margin: 0 auto;
+    align-self: center;
+}
+.box-team-item .btn-team:hover {
+    background-color: #1a88e1;
+    box-shadow: 0 6px 10px #9e9e9e;
+}
+.box-team-item .button-more:hover span {
+    background-position: -1px -23px;
+}
+.box-team-item .button-more:focus {
+    outline: none;
+}
+.social-team {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+.social-team>li {
+    margin: 0 5.5px;
+}
+/* fb */
+.box-team-item .btn-fb {
+    background-color: #fafafa;
+}
+.box-team-item .btn-fb span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: -59px 0px;
+    margin: 0 auto;
+    align-self: center;
+}
+.box-team-item .btn-fb:hover span {
+    background-position: -59px -21px;
+}
+
+/* tw */
+.box-team-item .btn-tw {
+    background-color: #fafafa;
+}
+.box-team-item .btn-tw span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: -119px 0px;
+    margin: 0 auto;
+    align-self: center;
+}
+.box-team-item .btn-tw:hover span {
+    background-position: -119px -21px;
+}
+
+/* be */
+.box-team-item .btn-be {
+    background-color: #fafafa;
+}
+.box-team-item .btn-be span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: -180px 0px;
+    margin: 0 auto;
+    align-self: center;
+}
+.box-team-item .btn-be:hover span {
+    background-position: -180px -21px;
+}
+
+/* wb */
+.box-team-item .btn-wb {
+    background-color: #fafafa;
+}
+.box-team-item .btn-wb span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: -239px 0px;
+    margin: 0 auto;
+    align-self: center;
+}
+.box-team-item .btn-wb:hover span {
+    background-position: -239px -21px;
 }
 
 /* Background */
